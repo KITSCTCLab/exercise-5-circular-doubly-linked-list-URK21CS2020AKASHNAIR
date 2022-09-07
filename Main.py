@@ -111,10 +111,10 @@ for item in input_data.split(', '):
     data.append(int(item))
  elif item.startswith('['):
     item = item[1:-1]
- for letter in item.split(','):
-    if letter.isnumeric():
-        inner_list.append(int(letter))
-            data.append(inner_list)
+    for letter in item.split(','):
+        if letter.isnumeric():
+            inner_list.append(int(letter))
+    data.append(inner_list)
 obj = DoublyCircularLinkedList()
 result = []
 for i in range(len(operations)):
